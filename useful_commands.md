@@ -2,7 +2,8 @@
 
 ## Create Brewfile
 
-```console brew bundle dump -f
+```console
+brew bundle dump -f
 ```
 
 ## Install from Brewfile

@@ -12,6 +12,12 @@ brew bundle dump -f
 brew bundle -f=path/to/brewfile
 ```
 
+## grep
+
+```console
+grep -E --only-matching '[^"]+[?=9999]'
+```
+
 ## Errors about writing grammar tables when using the black formatter in Jupyterlab
 
 ```console

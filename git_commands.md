@@ -65,7 +65,7 @@ git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch path_to_f
 ## Go back to a previous commit
 
 ```console
-git reset --hard <comit_id>
+git reset --hard <commit_id>
 ```
 
 ## Check log of everything that was done, can see deleted / unreachable commits

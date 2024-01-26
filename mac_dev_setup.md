@@ -82,7 +82,13 @@ poetry config virtualenvs.prefer-active-python true
 ## Install and configure virtualenv, virtualenvwrapper
 ```sh
 pipx install --python $(which python) virtualenv virtualenvwrapper
+```
 
+And then configure:
+```sh
+echo 'export WORKON_HOME="$HOME"/.venvs' >> ~/.zshrc
+echo 'export VIRTUALENVWRAPPER_PYTHON="$HOME/.local/pipx/venvs/virtualenvwrapper/bin/python"' >> ~/.zshrc
+echo `source "$HOME/.local/pipx/venvs/virtualenvwrapper/bin/virtualenvwrapper.sh"` >> ~/.zshrc
 # Restart shell
 # Now you have access to commands like mkvirtualenv, rmvirtualenv, workon, deactivate
 mkvirtualenv -p $(pyenv which python) <name-venv>
